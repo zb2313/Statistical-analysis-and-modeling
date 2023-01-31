@@ -1,0 +1,1 @@
+nnictl create --config config_detailed.yml

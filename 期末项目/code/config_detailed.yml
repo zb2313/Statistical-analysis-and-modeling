@@ -1,0 +1,16 @@
+trialConcurrency: 3
+maxExecDuration: 100h
+maxTrialNum: 200
+trainingServicePlatform: local
+searchSpacePath: search_space.json
+useAnnotation: false
+tuner:
+  builtinTunerName: TPE
+trial:
+  #command: CUDA_VISIBLE_DEVICES=0 python main.py
+  command: python main.py
+  codeDir: .
+  gpuNum: 1
+localConfig:
+  useActiveGpu: true
+  maxTrialNumPerGpu: 1
